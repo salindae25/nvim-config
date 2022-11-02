@@ -27,4 +27,10 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
 
+
+  -- Programming --
+  use 'numToStr/Comment.nvim'
+
+  -- Terminal --
+  use 'akinsho/toggleterm.nvim'
 end)

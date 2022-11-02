@@ -9,4 +9,6 @@ require('config.lualine')
 require('config.neosoloarized')
 require('config.nvim-tree')
 require('config.telescope')
+require('config.comment')
+require('config.toggleterm')
 
