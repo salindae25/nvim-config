@@ -7,15 +7,24 @@ end
 vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
+  
+-- Essentials--
   use 'wbthomason/packer.nvim'
-  use {
-  'nvim-lualine/lualine.nvim',
+  use {'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
-  use {
-    'svrana/neosolarized.nvim',
-    requires = {'tjdevries/colorbuddy.nvim'}
   }
   use 'nvim-lua/plenary.nvim' -- Common utilities
   use 'glepnir/dashboard-nvim' -- Dashboard
+  use 'kyazdani42/nvim-tree.lua' --NvimTree file manager
+  use 'akinsho/nvim-bufferline.lua' -- Tab header
+ 
+-- Color scheme --
+  use { 'svrana/neosolarized.nvim',
+    requires = {'tjdevries/colorbuddy.nvim'}
+  }
+
+-- Navigation Easy --
+  use 'nvim-telescope/telescope.nvim'
+  use 'nvim-telescope/telescope-file-browser.nvim'
+
 end)
