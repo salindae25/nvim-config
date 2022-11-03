@@ -18,6 +18,9 @@ packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua' --NvimTree file manager
   use 'akinsho/nvim-bufferline.lua' -- Tab header
  
+-- Additional
+  use 'BurntSushi/ripgrep'  
+
 -- Color scheme --
   use { 'svrana/neosolarized.nvim',
     requires = {'tjdevries/colorbuddy.nvim'}
@@ -30,6 +33,20 @@ packer.startup(function(use)
 
   -- Programming --
   use 'numToStr/Comment.nvim'
+  use 'windwp/nvim-autopairs'
+
+  -- Auto Complete
+  use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
+  use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
+  use 'hrsh7th/nvim-cmp' -- Completion
+  use 'hrsh7th/cmp-path'
+
+  -- LSP
+  use 'neovim/nvim-lspconfig' -- LSP
+  use 'L3MON4D3/LuaSnip'
+  use {
+    'nvim-treesitter/nvim-treesitter',
+--    run = ':TSUpdate'
 
   -- Terminal --
   use 'akinsho/toggleterm.nvim'

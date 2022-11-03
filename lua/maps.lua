@@ -37,5 +37,5 @@ keymap.set('n','sl','<C-w>l')
 -- terminal
 keymap.set('t','jk','<C-\\><C-n>')
 
-keymap.set('n',';e',':NvimTreeToggle<Return>')
+keymap.set('n','<space>e',':NvimTreeToggle<Return>')
 
