@@ -1,3 +1,4 @@
+
 require('base')
 require('highlights')
 require('maps')
@@ -11,4 +12,14 @@ require('config.nvim-tree')
 require('config.telescope')
 require('config.comment')
 require('config.toggleterm')
+-- LSP
+require('config.lspconfig')
+require('config.treesitter')
 
+require('config.cmp')
+require('config.null-ls')
+require('config.lspkind')
+require('config.autopairs')
+require('config.luasnip')
+require('config.luasaga')
+require('config.ts-autotags')

@@ -34,6 +34,7 @@ packer.startup(function(use)
   -- Programming --
   use 'numToStr/Comment.nvim'
   use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
 
   -- Auto Complete
   use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
@@ -43,11 +44,18 @@ packer.startup(function(use)
 
   -- LSP
   use 'neovim/nvim-lspconfig' -- LSP
+  use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'L3MON4D3/LuaSnip'
+  use 'rafamadriz/friendly-snippets'
+  use 'saadparwaiz1/cmp_luasnip' 
   use {
     'nvim-treesitter/nvim-treesitter',
 --    run = ':TSUpdate'
+  }
+  use 'onsails/lspkind-nvim' -- vscode-like pictograms
+  use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
 
   -- Terminal --
   use 'akinsho/toggleterm.nvim'
+
 end)
